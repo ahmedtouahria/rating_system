@@ -1,4 +1,4 @@
-# MealsRater_API_Django
+# rating_system_django API
 
 # Business requirements as per the mockup 
 
