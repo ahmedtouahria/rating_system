@@ -45,5 +45,3 @@ Using Django REST frame work please implement the followings
 
 9- Token request API 
 
-10- Deploy to Heroku 
-
