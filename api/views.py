@@ -18,7 +18,7 @@ class UserViewSet(viewsets.ModelViewSet):
     queryset = User.objects.all()
     serializer_class = UserSerializer
     # #authentication_classes = (TokenAuthentication, )
-    permission_classes = (AllowAny,)
+    #permission_classes = (AllowAny,)
     
     def create(self, request, *args, **kwargs):
         serializer = self.get_serializer(data=request.data)
@@ -50,7 +50,7 @@ class MealViewSet(viewsets.ModelViewSet):
             meal = Meal.objects.get(id=pk)
             stars = request.data['stars']
             user = request.user
-            #print(user)
+            print(user)
             # username = request.data['username']
             # user = User.objects.get(username=username)
 
